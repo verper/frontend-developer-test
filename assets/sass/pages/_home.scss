@@ -1,0 +1,86 @@
+main {
+	background: black url(../images/hero.png) center no-repeat;
+    background-size: cover;
+
+	&:before {
+	    content: '';
+    	background: black;
+    	opacity: .6;
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	}
+}
+
+.main-content {
+	height: 100vh;
+	max-width: 1024px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 0 !important;
+
+	.slide-item {
+	    text-align: center;
+	    color: white;
+	    z-index: 2;
+	    outline: 0;
+
+	    h1 {
+	    	text-transform: uppercase;
+	    }
+
+	    .copy {
+	    	max-width: 700px;
+	    	margin: 0 auto;
+	    	padding: 0 40px;
+	    }
+
+	    .btn {
+	    	margin-top: 30px;
+	    }
+	}
+
+	.slick-dots {
+		bottom: 40px;
+
+		li {
+			button {
+			    width: 20px;
+			    height: 20px;
+			    display: inline-block;
+			    background: $brand-primary;
+			    border-radius: 100%;
+			    border: 1px solid $brand-primary;
+			    &:before {
+				    display: none;
+				}
+			}
+
+			&.slick-active {
+				button {
+					background: white;
+				}
+			}
+		}
+	}
+
+	.slick-arrow {
+		transition: all .3s ease;
+		&:hover:before {
+			color: $brand-primary;
+		}
+	}
+
+	.slick-prev {
+	    left: 10px;
+	    z-index: 99;
+	}
+
+	.slick-next {
+	    right: 10px;
+	    z-index: 99;
+	}
+}

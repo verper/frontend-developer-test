@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title> FrontEnd Developer Test by Ariel Verzosa gm.yhel@gmail.com</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Montserrat" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
+	<link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+	<main>
+
+		<div class="main-content">
+		  	<div class="slide-item">
+		  		<div class="copy">
+		  			<h1>Ariel Verzosa</h1>
+		  			<p>gm.yhel@gmail.com</p>
+		  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nulla felis. Sed dolor elit, interdum a arcu hendrerit, ultrices tempor leo. Donec sit amet elit malesuada, vulputate </p>
+		  			<a class="btn" href="javascript:void(0)">see more</a>
+		  		</div>
+		  	</div>
+			<div class="slide-item">
+				<div class="copy">
+		  			<h1>Ariel Verzosa</h1>
+		  			<p>gm.yhel@gmail.com</p>
+		  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nulla felis. Sed dolor elit, interdum a arcu hendrerit, ultrices tempor leo. Donec sit amet elit malesuada, vulputate nulla quis, placerat est. Duis eu est consectetur, mattis turpis vitae, pharetra ligula. Praesent at arcu vel odio feugiat ultrices. Lorem ipsum dolor sit amet,</p>
+					<a class="btn" href="javascript:void(0)">see more</a>
+				</div>
+		  	</div>
+		</div>
+			
+	</main>
+
+
+	<footer>
+		<script src="./assets/js/all.js"></script>
+
+		<script type="text/javascript">
+			$('.main-content').slick({
+				dots: true,
+				infinite: true,
+				speed: 500,
+				slidesToShow: 1,
+			  	slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 2000
+			});
+		</script>
+	</footer>
+</body>
+</html>
